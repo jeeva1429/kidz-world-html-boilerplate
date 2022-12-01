@@ -1,51 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 * {
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
 .nav-bar {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    padding: 0 30px;
-    align-items: center;
+     padding: 5px 10px;
+     align-items: center;
+     padding: 0 2.5%;
+}
 
-}
-#kw-logo {
-    width: 120px;
-    height: 30px;
-}
-#cart-image {
-    height: 30px;
-}
-#cart-logo-div {
+.cart-items {
     display: flex;
     align-items: center;
 }
-#cart-items {
-    font-size: 15px;
-    font-weight: bold;
+.nav-bar img {
+    height: 30px;
 }
-
-.kw-background-image {
-    height: 450px;
+#kw-background {
     width: 100%;
+    height: 400px;
 }
-#kw-slogan{
+#slogan {
     position: absolute;
-    top: 120px;
-    left:110px;
-    color: white;
+    top: 100px;
+    left: 70px;
+    color:white;
+    line-height: 70px;
 }
-#kw-slogan > h1 {
-    font-size: 40px;
-}
-.books {
-    display: flex;
+.books, .games,.hand-made {
     width: 90%;
+    display: flex;
     margin: 0 auto;
-    height: auto;
+    
+    justify-content: space-between;
+}
+.games {
+    margin-top: 10%;
+}
+.games-section, .handmade-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.books-div{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.booksdiv {
+.games-div,.handmade-div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.books-div #cart, .games-div #cart,.handmade-div #cart {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    align-items: center;
+   font-size: 15px;
+   
+}
+.books-div button, .games-div button, .hand-made button {
+    display: flex;
+    background-color: rgb(107, 107, 228);
+    border-radius: 5px;
+    border: 2px solid rgb(107, 107, 228);
+    height: 30px;
+    align-items: center;
+    color: white;
+    padding: 2px 3px;
+}
+button img {
+    height: 20px;
+    width: 20px;
+}
+
+.book-name p, .game-name p, .handmade-name p {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.book-name strong, .game-name strong, .handmade-name strong {
+    color :black;
+    font-size:  15px;
+}
+
+h3 {
+    margin-left: 5%;
+    font-size: 25px;
+}
+.games {
+    margin: 4px auto;
+}
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 2.5% 10%;
+    align-items: center;
+}
+footer img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+#footer-div2 {
+    width: 50%;
+    
+    text-align: right;
+}
+#footer-div1 {
+    width: 50%;
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+    section {
+        margin-top: -100px;
+    }
+    #kw-background {
+        height: 200px;
+    }
+    #slogan {
+       position: relative;
+       top: -190px; 
+       left: 10px;
+       font-size: 15px; 
+       line-height: 40px;
+    }
+    
+    h3 {
+       text-align: center;
+       width: 85%;
+       margin-bottom: 10%;
+       font-size: 20px; 
+    }
+    
+    .books, .games,.hand-made {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    .books-div {
+        width: 80%;  
+        margin: 0 auto;
+       margin-bottom: 10%;
+    }
+    
+    .games-div,.handmade-div {
+        width: 80%;
+        margin-top: 20%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .game-name, .book-name, .handmade-name {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+    }
+    .nav-bar div {
+        flex-direction: column;
+    }
+    #footer-div1 h2 {
+        
+        text-align: center;
+        
+    }
+    #footer-div1 img {
+        position: relative;
+        left: 20px;
+    }
+    
 }
