@@ -8,83 +8,219 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <main>
+    <header>
         <div class="nav-bar">
-              <img  id="kw-logo" src="./kidz-world-html-boilerplate/assets/kw-logo.png" alt="">
-              <div id="cart-logo-div">
-                <img  id="cart-image" src="./kidz-world-html-boilerplate/assets/cart-icon.png" alt="">
-                <p id="cart-items">Cart items (0)</p>
-              </div>
-        </div>
-        <div class="kw-background-image-div">
-                <img class="kw-background-image" src="./kidz-world-html-boilerplate/assets/kw-background.png" alt="">
-                <div id="kw-slogan">
-                    <h1>Shop.</h1>
-                    <h1>Have Fun.</h1>
-                    <h1>Repeat.</h1>
-                    <h4>#NewAndNow</h4>
+                <img src="./kw-logo.png" alt="">
+                <div class="cart-items">
+                    <img src="./cart-icon.png" alt="">
+                    <p>cart-items(0)</p>
                 </div>
         </div>
-    </main>
-    <section>
-    <div div="books">
-        <h1>Discover New Books</h1>
-        <div class="books-section">
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book1.png" alt="">
-                <p>This was or pact</p>
+        <img id="kw-background" src="./kw-background.png" alt="">
+        <div id="slogan">
+            <h1>Shop.</h1>
+            <h1>Have Fun.</h1>
+            <h1>Repeat.</h1>
+            <h5>#NewAndNow</h5>
+        </div>
+    </header>
+<section>
+        <h3>Discover New Books</h3>
+        <div class="books">
+         <div class="books-div">
+              <img src="./book1.png" alt="">
+              <div class="book-name">
+                <p><strong>This was our pact</strong></p>
                 <p>Ryan Andrews</p>
-                <div><p>$7.49</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
+              </div>
+              <div id="cart">
+                <p><strong>$7.49</strong></p>
+                <button>Add <img src="./cart-icon-white.png" alt=""></button>
+              </div>
+         </div>
+         <div class="books-div">
+            <img src="./book2.png" alt="">
+            <div class="book-name">
+              <p><strong>The famous five</strong></p>
+              <p>Guid Blyton</p>
             </div>
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book2.png" alt="">
-                <p>The famous five</p>
-                <p>Guid Blyton</p>
-                <div><p>$7.49</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
+            <div id="cart">
+              <p><strong>$4.59</strong></p>
+              <button>Add <img src="./cart-icon-white.png" alt=""></button>
             </div>
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book3.png" alt="">
-                <p>Matlida</p>
-                <p>Rolald Dahl</p>
-                <div><p>$6.80</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
-            </div>
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book4.png" alt="">
-                <p>Harry Potter</p>
-                <p>JK Rowling</p>
-                <div><p>$10</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
-            </div>
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book5.png" alt="">
-                <p>For Young Readers</p>
-                <p>Ruskin Bond</p>
-                <div><p>$7.29</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
-            </div>
-            <div class="booksdiv"><img src="./kidz-world-html-boilerplate/assets/book6.png" alt="">
-                <p>Wimpy Kid - DIY</p>
-                <p>Jeff Kinney</p>
-                <div><p>$2.99</p> 
-                    <button><p>Add</p> <img src="./kidz-world-html-boilerplate/assets/cart-icon-white.png" alt=""></button></div>
-            </div>
-        
+       </div>
+
+       <div class="books-div">
+            <img src="./book3.png" alt="">
+          <div class="book-name">
+            <p><strong>Matlida</strong></p>
+            <p>Roald Dahl</p>
         </div>
+        <div id="cart">
+          <p><strong>$6.80</strong></p>
+          <button>Add <img src="./cart-icon-white.png" alt=""></button>
+        </div>
+      </div>
+
+   <div class="books-div">
+    <img src="./book4.png" alt="">
+    <div class="book-name">
+      <p><strong>Harry Potter</strong></p>
+      <p>JK Rowling</p>
     </div>
-       
-    </section> 
-    <footer >
-        <div id="footer">
-            <div id="aboutme">
-                <p>Brought to you by</p>
-                <img id="krishti" src="kidz-world-html-boilerplate/assets/krishti.png" alt="">
+    <div id="cart">
+      <p><strong>$10</strong></p>
+      <button>Add <img src="./cart-icon-white.png" alt=""></button>
+    </div>
+</div>
+
+<div class="books-div">
+    <img src="./book5.png" alt="">
+    <div class="book-name">
+      <p><strong>For Young Readers</strong></p>
+      <p>Ruskin Bond</p>
+    </div>
+    <div id="cart">
+      <strong>$7.29</strong>
+      <button>Add <img src="./cart-icon-white.png" alt=""></button>
+    </div>
+</div>
+
+<div class="books-div">
+    <img src="./book6.png" alt="">
+    <div class="book-name">
+      <p><strong>Wimpy Kid - DIY</strong></p>
+      <p>Jeff Kinney</p>
+    </div>
+    <div id="cart">
+      <p><strong>$4.99</strong></p>
+      <button>Add <img src="./cart-icon-white.png" alt=""></button>
+    </div>
+  </div>
+</div>
+
+<div class="games-section">
+    <h3 id="games-heading">Discover new games</h3>
+     <div class="games">
+            <div class="games-div">
+                <img src="./dart-board.png" alt="">
+                <div class="game-name">
+                  <p><strong>Dart Board</strong></p>
+                  <p>Woodern board, 16 inches</p>
+                </div>
+                <div id="cart">
+                  <p><strong>$17.49</strong></p>
+                  <button>Add <img src="./cart-icon-white.png" alt=""></button>
+                </div>
             </div>
-        <div id="contact">
-            <span>krishti</span>
-            <div>
-                <p>Made with love ❣️ by Kalvian</p>
-                <p>Talk to me at krist@gmail.com</p>
+      
+
+
+       
+        <div class="games-div">
+              <img src="./connect-four.png" alt="">
+              <div class="game-name">
+                <p><strong>connect 4</strong></p>
+                <p>Board game, multiplayer</p>
+              </div>
+              <div id="cart">
+                <p><strong>$19.99</strong></p>
+                <button>Add <img src="./cart-icon-white.png" alt=""></button>
+              </div>
+          </div>
+      
+
+      
+        <div class="games-div">
+            <img src="./jenga.png" alt="">
+            <div class="game-name">
+              <p><strong>Jenga</strong></p>
+              <p>Wooden blocks, 54 pieces</p>
+            </div>
+            <div id="cart">
+              <p><strong>$20.99</strong></p>
+              <button>Add <img src="./cart-icon-white.png" alt=""></button>
             </div>
         </div>
-    </footer>
-    
+
+
+        <div class="games-div">
+          <img src="./monopoly.png" alt="">
+          <div class="game-name">
+            <p><strong>Monoploy</strong></p>
+            <p>1.61 x 15.75 x 10.51 inches</p>
+          </div>
+          <div id="cart">
+            <p><strong>$19.49</strong></p>
+            <button>Add <img src="./cart-icon-white.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="handmade-section">
+      <h3>Handmade with love</h3>
+      <div class="hand-made">
+        <div class="handmade-div">
+          <img src="./bookmarks.png" alt="">
+          <div class="handmade-name">
+            <p><strong>Bookmarks</strong></p>
+            <p>Handmade with love</p>
+       
+          </div>
+          <div id="cart">
+            <p><strong>$12.49</strong></p>
+            <button>Add <img src="./cart-icon-white.png" alt=""></button>
+          </div>
+        </div>
+         
+      <div class="handmade-div">
+         <img src="./birthday-card.png" alt="">
+          <div class="handmade-name">
+            <p><strong>Birthday card</strong></p>
+            <p>Handmade with love</p>
+          </div>
+          <div id="cart">
+            <p><strong>$19.99</strong></p>
+            <button>Add <img src="./cart-icon-white.png" alt=""></button>
+          </div>
+      </div>
+
+      <div class="handmade-div">
+        <img src="./stuffed-toy.png" alt="">
+         <div class="handmade-name">
+           <p><strong>Stuffed toys</strong></p>
+           <p>Handmade with love</p>
+         </div>
+         <div id="cart">
+           <p><strong>$15.99</strong></p>
+           <button>Add <img src="./cart-icon-white.png" alt=""></button>
+         </div>
+     </div>
+
+     <div class="handmade-div">
+      <img src="./dream-catcher.png" alt="">
+       <div class="handmade-name">
+         <p><strong>Drean catcher drawing</strong></p>
+         <p>Handmade with love</p>
+       </div>
+       <div id="cart">
+         <p><strong>$18.49</strong></p>
+         <button>Add <img src="./cart-icon-white.png" alt=""></button>
+       </div>
+   </div>
+  </div>
+</section>
+<footer>
+  <div id="footer-div1">
+    <h2>Brought to you by</h2>
+    <img src="./krishti.png" alt="">
+  </div>
+  <div id="footer-div2">
+    <p><strong>krishti</strong></p>
+    <p>Made with love❣️by Kalvian</p>
+    <p>Talk to me at krishti@gmail.com</p>
+  </div>
+</footer>
 </body>
 </html>
